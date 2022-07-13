@@ -9,22 +9,55 @@ import SwiftUI
 
 struct ContentView: View {
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
+    
+    @State private var isGridViewActive: Bool = false
     
     var body: some View {
         NavigationView {
-            List {
-                CoverImageView()
-                  .frame(height: 300)
-                  .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                
-                ForEach(animals) { animal in
-                    NavigationLink(destination: AnimalDetailsView(animal: animal)) {
-                        AnimalListItemView(animal: animal)
+            
+            Group {
+                if !isGridViewActive {
+                    List {
+                        CoverImageView()
+                          .frame(height: 300)
+                          .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                        
+                        ForEach(animals) { animal in
+                            NavigationLink(destination: AnimalDetailsView(animal: animal)) {
+                                AnimalListItemView(animal: animal)
+                            }//: LINK
+                        }//: LOOP
+                    }//: LIST
+                } else {
+                    Text("Grid view is active")
+                }//: Condition
+            }//: Group
+            .listStyle(.plain)
+            .navigationTitle("Africa")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    HStack(spacing: 16) {
+                        Button(action: {
+                            isGridViewActive = false
+                            haptics.impactOccurred()
+                        }) {
+                            Image(systemName: "square.fill.text.grid.1x2")
+                                .font(.title2)
+                                .foregroundColor(isGridViewActive ? .primary : .accentColor)
+                        }
+                        
+                        Button(action: {
+                            isGridViewActive = true
+                            haptics.impactOccurred()
+                        }) {
+                            Image(systemName: "square.grid.2x2")
+                                .font(.title2)
+                                .foregroundColor(isGridViewActive ? .accentColor : .primary)
+                        }
                     }
                 }
             }
-            .listStyle(.plain)
-            .navigationTitle("Africa")
         }
     }
 }

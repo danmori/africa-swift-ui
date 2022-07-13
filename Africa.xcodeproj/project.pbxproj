@@ -45,6 +45,8 @@
 		F1B0B3FA287E36D4000E1428 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0B3F9287E36D4000E1428 /* VideoPlayerView.swift */; };
 		F1B0B3FD287E3789000E1428 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0B3FC287E3789000E1428 /* VideoPlayerHelper.swift */; };
 		F1B0B3FF287E3ACE000E1428 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0B3FE287E3ACE000E1428 /* LocationModel.swift */; };
+		F1B0B401287E413A000E1428 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0B400287E413A000E1428 /* MapAnnotationView.swift */; };
+		F1B0B403287E44BA000E1428 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0B402287E44BA000E1428 /* MotionAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		F1B0B3F9287E36D4000E1428 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		F1B0B3FC287E3789000E1428 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		F1B0B3FE287E3ACE000E1428 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		F1B0B400287E413A000E1428 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		F1B0B402287E44BA000E1428 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,8 @@
 				F107DED4287D0F8E00C827B1 /* ExternalWeblinkView.swift */,
 				F1B0B3F7287E32BA000E1428 /* VideoListItemView.swift */,
 				F1B0B3F9287E36D4000E1428 /* VideoPlayerView.swift */,
+				F1B0B400287E413A000E1428 /* MapAnnotationView.swift */,
+				F1B0B402287E44BA000E1428 /* MotionAnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				F1B0B3FD287E3789000E1428 /* VideoPlayerHelper.swift in Sources */,
 				F107DED3287D0D8200C827B1 /* InsetMapView.swift in Sources */,
 				F107DEB6287CF0C300C827B1 /* VideoListView.swift in Sources */,
+				F1B0B401287E413A000E1428 /* MapAnnotationView.swift in Sources */,
 				F107DECB287D055300C827B1 /* AnimalDetailsView.swift in Sources */,
 				F1B0B3F6287E327A000E1428 /* VideoModel.swift in Sources */,
 				F107DEBA287CF0E000C827B1 /* GalleryView.swift in Sources */,
@@ -331,6 +338,7 @@
 				F107DECF287D089300C827B1 /* InsetGalleryView.swift in Sources */,
 				F1B0B3F8287E32BA000E1428 /* VideoListItemView.swift in Sources */,
 				F107DEC5287CF55300C827B1 /* CodableBundleExtension.swift in Sources */,
+				F1B0B403287E44BA000E1428 /* MotionAnimationView.swift in Sources */,
 				F107DECD287D06FA00C827B1 /* HeadingView.swift in Sources */,
 				F1B0B3FA287E36D4000E1428 /* VideoPlayerView.swift in Sources */,
 			);
